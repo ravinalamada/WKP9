@@ -1,19 +1,14 @@
-# WKP9
+## Explanation about my project
 
-Hey team!
-After a major graded project, let's do something different, and a little bit more straightforward.
-Today we’re going to build a list of the Studio Ghibli Movies, ranked from best to worst. If you haven’t seen any of those, I suggest you to look on the Onja hard drive! (after completing the project of course). They are amazing ✨
+Firstly, I built an html which contains a basic elements that I am going to use in js. And then, I styled them in style file. Secondly, I generated a function that fetched the movie from url. And lastly, I created function that generated html in order to dispaly the movie list in the DOM. And I called the the function that display the html at so that when the user reloads the browser they will see the movies list directly.
 
-The website will look similar to this :
+## The thing that I stuggled most
 
-![assets/ghibli.png](assets/ghibli.png)
+I found a great deal of difficulty in sorting the movie score because I didn't know that I should sort the movie list before I mapped it.
 
-You will fetch the data from this URL [https://ghibliapi.herokuapp.com/films](https://ghibliapi.herokuapp.com/films)
+## Topic that I need more explanation
+I would like to know when we should use prototype method and why should we use it please.
 
-and display the result in the HTML. The film needs to be sorted depending on their rt_score!
+## Comments
 
-There is a lot of data in a film object, use whatever attribute you need.
-
-Feel free to add some beautiful styling to your website when you're done fetching and sorting the data.
-
-Good luck 💻
+It was such an enjoyable project. Thank you so much for structuring it.
