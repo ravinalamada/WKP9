@@ -1,7 +1,8 @@
 console.log('works');
-
+// Grab element that is needed
 const list = document.querySelector('.list');
 
+// Fetched the movie from the url
 async function fetchMovie() {
   const response = await fetch('https://ghibliapi.herokuapp.com/films', {
     headers: {
@@ -12,9 +13,13 @@ async function fetchMovie() {
   return movies;
 }
 
+// This function generate html and append it into the DOM
 async function displayMovies() {
   const moviesList = await fetchMovie();
+  // sorted the movie's score
   const sortedMovieList = moviesList.sort((a, b) => b.rt_score - a.rt_score);
+
+  // Generated html
   const html = sortedMovieList.map(movie => {
     return `
       <li class="item" id="${movie.id}">
@@ -31,6 +36,8 @@ async function displayMovies() {
       </li>
       `;
   });
+
+  //Append the html into the DOM
   list.innerHTML = html.join('');
 }
 
